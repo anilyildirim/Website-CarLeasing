@@ -1,0 +1,94 @@
+:root {
+  margin: 0px;
+  padding: 0px;
+  /*font-family: 'Julius Sans One', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;*/
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+.logo_row {
+    height: 125px;
+	background-color: #000000;
+	margin: 0px;
+}
+
+.logo {
+	width: 30%
+}
+
+img.logo {
+	margin: 0px 0px 0px 50px;
+	padding: 0px;
+	height: 100%;
+	width: auto;
+	float: left;
+}
+
+.top_menu {
+	list-style: none;
+	float: right;
+	height: 70px;
+	margin: 25px 0px;
+	width: 45%;
+}
+
+.top_menu li {
+	color: rgb(255, 204, 0);
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 300;
+	font-size: 0.9em;
+	display: inline-block;
+	margin: 5px 10px;
+	border: 0.5px solid rgb(255, 204, 0);
+	padding: 5px 25px;
+}
+
+.top_menu li:hover {
+	color: black;
+	background-color: rgb(255, 204, 0);
+}
+
+.menu_row {
+	list-style: none;
+	height: 70px;
+	margin: 0px;
+	padding: 5px;
+	text-align: center;
+	background-color: #323232;
+}
+
+.menu_row a {
+	text-decoration: none;
+	color: rgb(255, 204, 0);
+}
+
+.menu_row li {
+	color: rgb(255, 204, 0);
+	font-family: 'Julius Sans One', serif;
+	font-size: 1.1em;
+	display: inline-block;
+	margin: 5px 10px;
+	padding: 5px 25px;
+	letter-spacing: 2px;
+	transition: all .3s ease-in-out;
+}
+
+.menu_row li:hover {
+	transform: scale(1.2);
+	
+}
+
+#selection {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+  url("https://car-images.bauersecure.com/pagefiles/73857/1040x585/rr_dawn_blackbadge_08.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+
