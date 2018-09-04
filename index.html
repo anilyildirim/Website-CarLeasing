@@ -30,7 +30,6 @@
 		<li><a href="#selection"> Selection</a></li>
 		<li><a href="#firstclass"> First Class</a></li>
 		<li><a href="#offers"> Offers</a></li>
-		<li><a href="#rewards"> Gold Plus Rewards</a></li>
 		<li><a href="#fleet"> Fleet Leasing</a></li>
 	  </ul>
 	</div>
@@ -38,7 +37,102 @@
   
   <div class="container">
     <div id="selection">
+	  <div class="selectionform">
+	    <h3 class="selectionheader">Book your car:</h3>
+		<div class="step1">
+		  <p class="stepnumber"> 1 </p>
+		  <fieldset>
+		    <legend>Pick-up Location</legend>
+			<label> Please choose a location: <br>
+			<select name="locations">
+			  <option value="berlin">Berlin Tegel Airport</option>
+			  <option value="london">London Heathrow Airport</option>
+			  <option value="newyork">New York JFK Airport</option>
+			  <option value="paris">Paris Charles De Gaulle Airport</option>
+			  <option value="dubai">Dubai International Airport</option>
+			</select>
+		  </fieldset>
+		  <a href="#">Help me find a Thunder rental location</a>
+		  <form>
+		    <input type="checkbox" name="returnlocation" value="differentreturnlocation"/>Return car to a different Thunder location
+		  </form>
+		<div class="step2">
+		  <p class="stepnumber"> 2 </p>
+		  <fieldset>
+		    <legend>Date and Time</legend>
+			<label for="pickup">Pick-up Date:</label><br>
+			<input type="date" name="pickup" required />
+			<input id="appt-time" type="time" name="pickup"
+         min="07:00" max="00:00" value="13:30"><br>
+			<label for="return">Return Date:</label><br>
+			<input type="date" name="return" required />
+			<input id="appt-time" type="time" name="return"
+         min="07:00" max="00:00" value="13:30">
+		  </fieldset>
+		  <h6>*Please consider possible extra fees for the deliveries during out of working hours.</h6> 
+		</div>
+		<div class="step3">
+		  <p class="stepnumber"> 3 </p>
+		  <fieldset>
+		  <legend>Age</legend>
+		  <label for="age">Your age at time of pick-up</label>
+		  <select name="age">
+		    <option value="18">18*</option>
+			<option value="19">19*</option>
+			<option value="20">20*</option>
+			<option value="21">21*</option>
+			<option value="22">22*</option>
+			<option value="23">23*</option>
+			<option value="24">24*</option>
+			<option value="25">25</option>
+			<option value="26">26</option>
+			<option value="27">27</option>
+			<option value="28">28</option>
+			<option value="29">29</option>
+			<option value="30">30-69</option>
+			<option value="70">70+ **</option>
+		  </select>
+		</div>
+		<div class="step4">
+		  <p class="stepnumber"> 4 </p>
+		  <fieldset>
+		  <legend>Car Type</legend>
+		  <label for="types">Please choose a group:</label>
+		  <select name="type">
+		    <option value="dream">Dream Collection</option>
+			<option value="dream">Family Collection</option>
+			<option value="dream">Prestige Collection</option>
+			<option value="dream">Green Collection</option>
+			<option value="dream">Business Collection</option>
+		  </select>
+		</div>
+		<div class="choicesubmit">
+		  <form>
+		    <input type="submit" name="membersubmit" value="Submit as a member"/>
+			<input type="submit" name="guestsubmit" value="Submit as a guest"/>
+		  </form>
+		</div>
+	  </div>  
 	</div>
+	<div class="sidemenu">
+	    <div class="side newsletter">
+		  <img class="sidelogo" src="img/sidelogo0.png">
+		  <p>Newsletter</p>
+		</div>
+		<div class="side socialmedia">
+		  <img class="sidelogo" src="img/sidelogo1.png">
+		  <p>Socialmedia</p>
+		</div>
+		<div class="side corporate">
+		  <img class="sidelogo" src="img/sidelogo2.png">
+		  <p>Corporate</p>
+		</div>
+		<div class="side press">
+		  <img class="sidelogo" src="img/sidelogo3.png">
+		  <p>Press</p>
+		</div>	    
+	  </div>
+	
 	<div id="firstclass">
 	</div>
 	<div id="offers">
