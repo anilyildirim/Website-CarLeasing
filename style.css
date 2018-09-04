@@ -1,7 +1,6 @@
 :root {
   margin: 0px;
   padding: 0px;
-  min-width: 1100px;
   /*font-family: 'Julius Sans One', sans-serif;
 font-family: 'Source Sans Pro', sans-serif;*/
 }
@@ -10,6 +9,8 @@ body {
 	margin: 0px;
 	padding: 0px;
 }
+
+/*Logo & Top Menu */
 
 .logo_row {
     height: 125px;
@@ -53,6 +54,8 @@ img.logo {
 	background-color: rgb(255, 204, 0);
 }
 
+/* Main Menu Bar */
+
 .menu_row {
 	list-style: none;
 	height: 70px;
@@ -79,9 +82,10 @@ img.logo {
 }
 
 .menu_row li:hover {
-	transform: scale(1.2);
-	
+	transform: scale(1.2);	
 }
+
+/* Car Booking Section */
 
 #selection {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
@@ -95,7 +99,7 @@ img.logo {
 .selectionheader {
 	margin-left: 50px;
 	color: rgb(255, 204, 0);
-	font-size: 25px;
+	font-size: 1.5em;
 	font-weight: 400;
 	letter-spacing: 1px;
 	text-transform: uppercase;
@@ -117,7 +121,7 @@ img.logo {
 
 .stepnumber {
 	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 20px;
+	font-size: 1.1em;
 	color: rgb(255, 204, 0);
     border: 2px solid rgb(255, 204, 0);
 	border-radius: 50%;
@@ -200,6 +204,8 @@ h6 {
 	color: rgb(255, 204, 0);
 }
 
+/* Dynamic Right Side Menu */
+
 .sidemenu {
 	position: relative;
 	background: transparent;
@@ -273,4 +279,277 @@ img.sidelogo {
 
 .press:hover {
 	grid-area: 4 / 2 / 5 / 5;
+}
+
+/* First Class Section */
+
+#firstclass {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+	url("https://i.ytimg.com/vi/NuP2OVMyQgw/maxresdefault.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 600px;
+}
+
+.sectionheader {
+	background-color: #323232;
+	font-family: 'Julius Sans One', sans-serif;
+	font-size: 1em;
+	text-align: center;
+	color: rgb(255, 204, 0);
+	margin: 0px;
+	padding: 10px;
+}
+
+.sectionheader h2 {
+	font-weight: 400;
+}
+
+.sectionslogan {
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: white;
+	margin-top: 10%;
+}
+
+.sectionslogan h3 {
+	font-size: 4em;
+	font-weight: 400;
+	letter-spacing: 1px;
+}
+
+.sectionslogan a {
+	text-decoration: none;
+	color: white;
+}
+
+.sectionslogan p {
+	font-size: 1.5em;
+	font-style: italic;
+	letter-spacing: 2px;
+}
+
+/* Offers Section */
+
+#offers {
+	height: 500px;
+}
+
+.offerssectiongrid {
+	display: grid;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	height: 400px;
+	margin: 0px;
+	grid-template-rows: 2fr 1fr;
+	grid-template-columns: 1fr 1.5fr 1.5fr 1.5fr;
+	float: left;
+	grid-gap: 20px;
+	padding: 10px 0px;
+	background-color: #999999;
+	width: 100%;
+}
+
+.offer {
+	color: white;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 20px;
+	margin: 0px;
+	padding: 0px;
+	background: gray;
+	display: grid;
+	grid-template-rows: 2fr 1fr;
+	grid-template-columns: 1fr;
+	grid-gap: 0;
+	max-height: 400px;
+}
+
+.offer:hover{
+	cursor: pointer;
+}
+
+.offersmenu {
+	grid-area: 1 / 1 / 3 / 2;
+	background-color: #191919;
+	color: rgb(255, 204, 0);
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 20px;
+	margin: 0px;
+	padding: 20px;
+}
+
+.offersmenu h3 {
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.offersmenu ul {
+	list-style: none;
+    padding-left: 0;
+	font-weight: 300;
+}
+
+.offersmenu li {
+	padding: 5px;
+	margin: 3px;
+	border-bottom: 1px dotted rgb(255, 204, 0);
+}
+
+.offersmenu a:hover {
+	background-color: rgb(255, 204, 0);
+	color: black;
+}
+
+.offersmenu a {
+	text-decoration: none;
+	color: rgb(255, 204, 0);
+}
+
+.thunderpresents {
+	grid-area: 1 / 2 / 3 / 3;
+}
+
+.supercover {
+	grid-area: 1 / 3 / 3 / 4;
+}
+
+.newcar {
+	grid-area: 1 / 4 / 3 / 5;
+}
+
+.slogan {
+	grid-area: 1 / 1 / 2 / 2;
+	background-color: red;
+}
+
+.slogan h1 {
+	font-weight: 400;
+	padding: 10px;
+}
+
+.slogan p {
+	padding: 10px;
+}
+
+.info {
+	grid-area: 2 / 1 / 3 / 2;
+	background-color: #323232;
+}
+
+.info h1 {
+	padding: 10px;
+	font-weight: 400;
+	font-size: 1em;
+}
+
+.info p {
+	padding: 10px;
+	font-weight: 300;
+}
+
+.thunderpresents .slogan {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+	url("https://www.larevueautomobile.com/images/Aston-Martin/Vanquish/Exterieur/Aston_Martin_Vanquish_013.jpg");
+    background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.supercover .slogan {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+	url("http://media.gq.com/photos/58c23b4e0823953b77477337/master/pass/ferrari-812-superfast-01.jpg");
+    background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.newcar .slogan {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+	url("https://cdn.bmwblog.com/wp-content/uploads/2017/11/BMW-i8-Facelift-07.jpg");
+    background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* Fleet Leasing Section */
+
+#fleet {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+	url("http://nvclimo.com/data1/images/nyc_vipjpeg_edits001.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 550px;
+}
+
+/* Sign up Section */
+
+.signup {
+	background-color: black;
+	text-align: center;
+	width: 100%;
+}
+
+.signupform {
+	width: 75%;
+	margin: 0 auto;
+	padding: 30px;
+}
+
+.signupform form {
+	padding-top: 20px;
+    padding-bottom: 20px;
+	border-top: 1px dotted rgb(255, 204, 0);
+	border-bottom: 1px dotted rgb(255, 204, 0);
+}
+
+form span {
+	font-family: 'Source Sans Pro', sans-serif;
+	color: rgb(255, 204, 0);
+}
+
+[name="email"] {
+	background-color: lightgray;
+	font-family: 'Source Sans Pro', sans-serif;
+	border-radius: 5px;
+	padding: 0px 20px;
+	color: #666666;
+	margin: 0px 15px;
+}
+
+[name="btn"] {
+	padding: 10px 25px;
+}
+
+[name="btn"]:hover {
+	background-color: #323232;
+}
+
+/* Footer */
+
+footer {
+	background: black;
+	text-align: center;
+	margin: 0px;
+	padding: 10px;
+}
+
+footer span {
+	color: white;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+footer li {
+	list-style: none;
+	display: inline-block;
+}
+
+footer a {
+	color: rgb(255, 204, 0);
+	text-decoration: none;
+	font-family: 'Source Sans Pro', sans-serif;
 }
